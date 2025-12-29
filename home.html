@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0f111a;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: maroon;
+            color: white;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            color: #000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        .talk-btn {
+            padding: 8px 18px;
+            background: white;
+            color: maroon;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .talk-btn:hover {
+            background: #000;
+            color: white;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #8b0000;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #a70000;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: maroon;
+        }
+
+        .hero-image img {
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: -120px;
+        }
+
+        .simple-footer {
+            text-align: center;
+            padding: 20px;
+            background: maroon;
+            color: white;
+            font-size: 14px;
+            border-top: 1px solid #4b4b4b;
+            margin-top: -63px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+
+            <ul class="nav-links">
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About Me</b></a></li>
+                <li><a href="education.html"><b>Education</b></a></li>
+                <li><a href="projects.html"><b>Projects</b></a></li>
+            </ul>
+
+            <a href="contact.html" class="talk-btn">Let's Talk</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hey, This is Bismah!</h1>
+            <p>
+                Crafting bold designs and pixel-perfect websites. <br>
+                Turning ideas into scroll-stopping digital experiences. <br>
+                Dive in and let's create something unforgettable together!
+            </p>
+
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Me</a>
+                <a href="about.html" class="btn btn-secondary">About Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="pic/Minimalist_Chic_Hijab_Style___Cream_Blazer___Black_Outfit-removebg-preview.png" alt="PICTURE">
+        </div>
+    </section>
+
+    <footer class="simple-footer">
+        <p>© 2025 Bismah | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

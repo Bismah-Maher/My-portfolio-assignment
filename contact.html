@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: maroon;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #080508;
+        }
+
+        body {
+            background-color: #0d0f16;
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        .head {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .head h1 {
+            font-size: 40px;
+            color: white;
+        }
+
+        .head p {
+            margin-top: 10px;
+            color: #fcf9f9;
+            font-size: 18px;
+        }
+
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .form {
+            background: #14161e;
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+        .form:hover{
+            border: #ffffff;
+            border-radius: 30px;
+        }
+
+        .form label {
+            font-size: 15px;
+            color: #ffffff;
+        }
+
+        .form input,
+        .form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: #0c0e14;
+            color: white;
+            font-size: 15px;
+        }
+
+        .form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .form button {
+            width: 100%;
+            background: maroon;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background: rgb(180, 0, 0);
+        }
+        
+        .simple-footer {
+            text-align: center;
+            padding: 20px;
+            background: maroon;
+            color: white;
+            font-size: 14px;
+            width: 100%;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="logo">Portfolio</div>
+
+                <ul class="nav-links">
+                    <li><a href="home.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About Me</b></a></li>
+                    <li><a href="education.html"><b>Education</b></a></li>
+                    <li><a href="projects.html"><b>Projects</b></a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <div class="head">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+        </div>
+
+        <div class="contact-container">
+
+            <form class="form">
+                <label>Name</label>
+                <p>
+                <input type="text" placeholder="Enter your name">
+                </p>
+
+                <p>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+                </p>
+
+                <p>
+                <label>Message</label>
+                <textarea placeholder="Write your message..."></textarea>
+                </p>
+
+                <p>
+                <button type="submit">Send Message</button>
+                </p>
+            </form>
+
+        </div>
+
+        <footer class="simple-footer">
+            © 2025 Bismah | All Rights Reserved
+        </footer>
+
+</body>
+
+</html>

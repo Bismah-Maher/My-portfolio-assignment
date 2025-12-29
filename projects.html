@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: maroon;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #080508;
+        }
+
+        .talk-btn {
+            padding: 8px 18px;
+            background: white;
+            color: maroon;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .talk-btn:hover {
+            background: #030303;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f111a;
+        }
+
+        .talk-btn:hover {
+            background: #030303;
+        }
+
+        .heading {
+            color: aliceblue;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .heading:hover {
+            color: #ca9898;
+        }
+
+        .pics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .pics img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+
+        }
+
+        .pics img:hover {
+             transform: translateY(-20px);
+            border-color: #080606;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .project img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            color: white;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .simple-footer {
+            text-align: center;
+            padding: 20px;
+            background: maroon;
+            color: white;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+
+            <ul class="nav-links">
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About Me</b></a></li>
+                <li><a href="education.html"><b>Education</b></a></li>
+                <li><a href="projects.html"><b>Projects</b></a></li>
+            </ul>
+
+            <a href="contact.html" class="talk-btn">Let's Talk</a>
+        </nav>
+    </header><br><br>
+    <div class="heading">
+        <h1>My Projects</h1>
+    </div><br><br><br>
+    <div class="pics">
+
+        <div class="project">
+            <img src="pic/Animated Login Form Using HTML and CSS.jpg" alt="PICTURE">
+            <p class="caption">Animated Login Page</p>
+        </div>
+
+        <div class="project">
+            <img src="pic/download.jpg" alt="PICTURE">
+            <p class="caption">Cute Kitty Website</p>
+        </div>
+
+        <div class="project">
+            <img src="pic/Interactive login_signup design - Manish Kumar.jpg" alt="PICTURE">
+            <p class="caption">Modern Signup Form</p>
+        </div>
+
+    </div>
+    <footer class="simple-footer">
+        © 2025 Bismah | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

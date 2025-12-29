@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: maroon;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #080508;
+        }
+
+        .talk-btn {
+            padding: 8px 18px;
+            background: white;
+            color: maroon;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .talk-btn:hover {
+            background: #030303;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f111a;
+        }
+
+        .talk-btn:hover {
+            background: #030303;
+        }
+
+        .education-section {
+            padding: 50px 80px;
+        }
+
+        .education-section h1 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #f3f3f3;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .education-section h1:hover {
+            color: rgb(185, 96, 96);
+        }
+
+        .edu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #161a23;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #30333a;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+            border-color: #080606;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: #f3f3f3;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #9b3f1b;
+            margin-bottom: 10px;
+        }
+
+        .year {
+            font-size: 15px;
+            color: #aa246e;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: maroon;
+            color: white;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-top: 1px solid #2a2c34;
+            margin-top: 110px;
+        }
+        .data {
+            color: #f3f3f3;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+
+            <ul class="nav-links">
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About Me</b></a></li>
+                <li><a href="education.html"><b>Education</b></a></li>
+                <li><a href="projects.html"><b>Projects</b></a></li>
+            </ul>
+
+            <a href="contact.html" class="talk-btn">Let's Talk</a>
+        </nav>
+    </header>
+
+    <section class="education-section">
+        <h1>My Education</h1>
+        <br><br><br>
+
+        <div class="edu">
+
+            <div class="card">
+                <h2>(BS) DPT</h2>
+                <h3>Jinnah Medical University</h3>
+                <p class="year">2025 – 2030</p>
+                <p class="data">
+                    Studying core biological sciences including Human Anatomy, Microbiology, Ecology,
+                    Genetics, Cell Biology, and Biochemistry.
+                    Gaining experience through lab work, practical experiments, and research projects.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Intermediate (Pre-Medical)</h2>
+                <h3>Army public degree College, malir cantt</h3>
+                <p class="year">2023 – 2025</p>
+                <p class="data">
+                    Completed Pre-Medical with subjects including Biology, Chemistry, and Physics.
+                    Developed a strong foundation in life sciences and laboratory techniques.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Matriculation (Science)</h2>
+                <h3>Army public School, malir cantt</h3>
+                <p class="year">2022-2023</p>
+                <p class="data">
+                    Studied science with a focus on Biology and Chemistry.
+                    Actively participated in science fairs and academic competitions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <div class="footer">
+    <footer>
+        © 2025 Bismah | All Rights Reserved
+    </footer>
+    </div>
+
+</body>
+
+</html>
